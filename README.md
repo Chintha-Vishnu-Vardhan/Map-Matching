@@ -87,5 +87,3 @@ The animation script produces an HTML file with a play/pause interface, showing 
 * **Orientation-Aware HMM**: Fusing `bearing` data from the basemap with vehicle heading will further improve accuracy at acute-angle intersections.
 
 ---
-
-Would you like me to help you generate a **User Guide** specifically for the Chennai Police operators to navigate these HTML animations?
