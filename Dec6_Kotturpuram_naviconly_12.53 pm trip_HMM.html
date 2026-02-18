@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_830d46384768d05b1085dd4b2dc676a0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iso8601-js-period@0.2.1/iso8601.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-timedimension@1.1.1/dist/leaflet.timedimension.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-timedimension@1.1.1/dist/leaflet.timedimension.control.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_830d46384768d05b1085dd4b2dc676a0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_830d46384768d05b1085dd4b2dc676a0 = L.map(
+                "map_830d46384768d05b1085dd4b2dc676a0",
+                {
+                    center: [13.017894889931114, 80.24101050631016],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 18,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_12c7a175ed15f0285cde2705ad12959b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_12c7a175ed15f0285cde2705ad12959b.addTo(map_830d46384768d05b1085dd4b2dc676a0);
+        
+    
+            var marker_1716a0359dcc8249a5968008f07a49ea = L.marker(
+                [13.015493733334866, 80.24049078973069],
+                {
+}
+            ).addTo(map_830d46384768d05b1085dd4b2dc676a0);
+        
+    
+            var icon_4d06e231a3c275fb3992b891cd0ee7cc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "play",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ebe1563cdeb4e3efc5f1aba657bd66a2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c99305a587198043557e839e1860dcc9 = $(`<div id="html_c99305a587198043557e839e1860dcc9" style="width: 100.0%; height: 100.0%;">Start: 2025-12-06 12:53:18</div>`)[0];
+                popup_ebe1563cdeb4e3efc5f1aba657bd66a2.setContent(html_c99305a587198043557e839e1860dcc9);
+            
+        
+
+        marker_1716a0359dcc8249a5968008f07a49ea.bindPopup(popup_ebe1563cdeb4e3efc5f1aba657bd66a2)
+        ;
+
+        
+    
+    
+                marker_1716a0359dcc8249a5968008f07a49ea.setIcon(icon_4d06e231a3c275fb3992b891cd0ee7cc);
+            
+    
+            var marker_149afa0f7b210493917307ae8724d4a8 = L.marker(
+                [13.020352839679616, 80.24172602473634],
+                {
+}
+            ).addTo(map_830d46384768d05b1085dd4b2dc676a0);
+        
+    
+            var icon_2b5e40dce555a0d92379e991885b53f6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "stop",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d62ec9028beec1da1b15a09a2d51f949 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f98447978bc1f1d51f5f9c717691d4f7 = $(`<div id="html_f98447978bc1f1d51f5f9c717691d4f7" style="width: 100.0%; height: 100.0%;">End: 2025-12-06 12:55:09</div>`)[0];
+                popup_d62ec9028beec1da1b15a09a2d51f949.setContent(html_f98447978bc1f1d51f5f9c717691d4f7);
+            
+        
+
+        marker_149afa0f7b210493917307ae8724d4a8.bindPopup(popup_d62ec9028beec1da1b15a09a2d51f949)
+        ;
+
+        
+    
+    
+                marker_149afa0f7b210493917307ae8724d4a8.setIcon(icon_2b5e40dce555a0d92379e991885b53f6);
+            
+    
+            L.Control.TimeDimensionCustom = L.Control.TimeDimension.extend({
+                _getDisplayDateFormat: function(date){
+                    var newdate = new moment(date);
+                    console.log(newdate)
+                    return newdate.format("HH:mm:ss");
+                }
+            });
+            map_830d46384768d05b1085dd4b2dc676a0.timeDimension = L.timeDimension(
+                {
+                    period: "PT1S",
+                }
+            );
+            var timeDimensionControl = new L.Control.TimeDimensionCustom(
+                {
+  "position": "bottomleft",
+  "minSpeed": 0.1,
+  "maxSpeed": 2,
+  "autoPlay": true,
+  "loopButton": true,
+  "timeSliderDragUpdate": true,
+  "speedSlider": true,
+  "playerOptions": {
+  "transitionTime": 200,
+  "loop": false,
+  "startOver": true,
+},
+}
+            );
+            map_830d46384768d05b1085dd4b2dc676a0.addControl(this.timeDimensionControl);
+
+            var geoJsonLayer = L.geoJson({"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24049078973069, 13.015493733334866]}, "properties": {"time": "2025-12-06T12:53:18", "popup": "Time: 2025-12-06 12:53:18", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24049830162129, 13.015550030077172]}, "properties": {"time": "2025-12-06T12:53:19", "popup": "Time: 2025-12-06 12:53:19", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24050425623508, 13.015594602073715]}, "properties": {"time": "2025-12-06T12:53:20", "popup": "Time: 2025-12-06 12:53:20", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.2405439155348, 13.01586629314306]}, "properties": {"time": "2025-12-06T12:53:21", "popup": "Time: 2025-12-06 12:53:21", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24057474794185, 13.016033968417986]}, "properties": {"time": "2025-12-06T12:53:22", "popup": "Time: 2025-12-06 12:53:22", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24060105080463, 13.016161902814298]}, "properties": {"time": "2025-12-06T12:53:23", "popup": "Time: 2025-12-06 12:53:23", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.2405841641271, 13.016079767779708]}, "properties": {"time": "2025-12-06T12:53:24", "popup": "Time: 2025-12-06 12:53:24", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24063616115352, 13.016332675728592]}, "properties": {"time": "2025-12-06T12:53:25", "popup": "Time: 2025-12-06 12:53:25", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24064903706963, 13.016395302730851]}, "properties": {"time": "2025-12-06T12:53:26", "popup": "Time: 2025-12-06 12:53:26", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24064793017712, 13.016389918931711]}, "properties": {"time": "2025-12-06T12:53:27", "popup": "Time: 2025-12-06 12:53:27", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.2406586321603, 13.0164419721504]}, "properties": {"time": "2025-12-06T12:53:28", "popup": "Time: 2025-12-06 12:53:28", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24066621668428, 13.01647886239347]}, "properties": {"time": "2025-12-06T12:53:29", "popup": "Time: 2025-12-06 12:53:29", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24070435716855, 13.01666033605039]}, "properties": {"time": "2025-12-06T12:53:30", "popup": "Time: 2025-12-06 12:53:30", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24074029312682, 13.016820784446343]}, "properties": {"time": "2025-12-06T12:53:31", "popup": "Time: 2025-12-06 12:53:31", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.2407550910975, 13.01690539879543]}, "properties": {"time": "2025-12-06T12:53:32", "popup": "Time: 2025-12-06 12:53:32", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24074460121682, 13.016843543539684]}, "properties": {"time": "2025-12-06T12:53:33", "popup": "Time: 2025-12-06 12:53:33", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24078177434056, 13.017060060896926]}, "properties": {"time": "2025-12-06T12:53:34", "popup": "Time: 2025-12-06 12:53:34", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24078414413862, 13.017069817097909]}, "properties": {"time": "2025-12-06T12:53:35", "popup": "Time: 2025-12-06 12:53:35", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24082424639705, 13.017234913630157]}, "properties": {"time": "2025-12-06T12:53:36", "popup": "Time: 2025-12-06 12:53:36", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24082488418787, 13.017237539342371]}, "properties": {"time": "2025-12-06T12:53:37", "popup": "Time: 2025-12-06 12:53:37", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24083749919717, 13.017289473888606]}, "properties": {"time": "2025-12-06T12:53:38", "popup": "Time: 2025-12-06 12:53:38", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24091952489198, 13.017635154706614]}, "properties": {"time": "2025-12-06T12:53:39", "popup": "Time: 2025-12-06 12:53:39", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24093369483838, 13.017695833116823]}, "properties": {"time": "2025-12-06T12:53:40", "popup": "Time: 2025-12-06 12:53:40", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24093908948007, 13.017718933993356]}, "properties": {"time": "2025-12-06T12:53:41", "popup": "Time: 2025-12-06 12:53:41", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24094188002415, 13.017730883629635]}, "properties": {"time": "2025-12-06T12:53:42", "popup": "Time: 2025-12-06 12:53:42", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24094188002415, 13.017730883629635]}, "properties": {"time": "2025-12-06T12:53:43", "popup": "Time: 2025-12-06 12:53:43", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24094188002415, 13.017730883629635]}, "properties": {"time": "2025-12-06T12:53:44", "popup": "Time: 2025-12-06 12:53:44", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24091120038584, 13.017599507572765]}, "properties": {"time": "2025-12-06T12:53:45", "popup": "Time: 2025-12-06 12:53:45", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24089824213144, 13.017544017820764]}, "properties": {"time": "2025-12-06T12:53:46", "popup": "Time: 2025-12-06 12:53:46", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24088999377894, 13.017508696768097]}, "properties": {"time": "2025-12-06T12:53:47", "popup": "Time: 2025-12-06 12:53:47", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24091907074505, 13.017633209962469]}, "properties": {"time": "2025-12-06T12:53:48", "popup": "Time: 2025-12-06 12:53:48", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24093762645852, 13.017712669058607]}, "properties": {"time": "2025-12-06T12:53:49", "popup": "Time: 2025-12-06 12:53:49", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24093289230632, 13.017692396522431]}, "properties": {"time": "2025-12-06T12:53:50", "popup": "Time: 2025-12-06 12:53:50", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24094188002415, 13.017730883629635]}, "properties": {"time": "2025-12-06T12:53:51", "popup": "Time: 2025-12-06 12:53:51", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24094188002415, 13.017730883629635]}, "properties": {"time": "2025-12-06T12:53:52", "popup": "Time: 2025-12-06 12:53:52", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24094188002415, 13.017730883629635]}, "properties": {"time": "2025-12-06T12:53:53", "popup": "Time: 2025-12-06 12:53:53", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24091223705193, 13.017603946776592]}, "properties": {"time": "2025-12-06T12:53:54", "popup": "Time: 2025-12-06 12:53:54", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24088999377894, 13.017508696768097]}, "properties": {"time": "2025-12-06T12:53:55", "popup": "Time: 2025-12-06 12:53:55", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24092306549889, 13.017650316262491]}, "properties": {"time": "2025-12-06T12:53:56", "popup": "Time: 2025-12-06 12:53:56", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24094188002415, 13.017730883629635]}, "properties": {"time": "2025-12-06T12:53:57", "popup": "Time: 2025-12-06 12:53:57", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24093278901923, 13.017691954227445]}, "properties": {"time": "2025-12-06T12:53:58", "popup": "Time: 2025-12-06 12:53:58", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24093565788152, 13.0177042392395]}, "properties": {"time": "2025-12-06T12:53:59", "popup": "Time: 2025-12-06 12:53:59", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24094188002415, 13.017730883629635]}, "properties": {"time": "2025-12-06T12:54:00", "popup": "Time: 2025-12-06 12:54:00", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24094188002415, 13.017730883629635]}, "properties": {"time": "2025-12-06T12:54:01", "popup": "Time: 2025-12-06 12:54:01", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24094188002415, 13.017730883629635]}, "properties": {"time": "2025-12-06T12:54:02", "popup": "Time: 2025-12-06 12:54:02", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24094188002415, 13.017730883629635]}, "properties": {"time": "2025-12-06T12:54:03", "popup": "Time: 2025-12-06 12:54:03", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24094188002415, 13.017730883629635]}, "properties": {"time": "2025-12-06T12:54:04", "popup": "Time: 2025-12-06 12:54:04", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24092657482544, 13.017665343868211]}, "properties": {"time": "2025-12-06T12:54:05", "popup": "Time: 2025-12-06 12:54:05", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24092908341039, 13.017676086106563]}, "properties": {"time": "2025-12-06T12:54:06", "popup": "Time: 2025-12-06 12:54:06", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24089879833132, 13.01754639957664]}, "properties": {"time": "2025-12-06T12:54:07", "popup": "Time: 2025-12-06 12:54:07", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24090651469912, 13.017579442558448]}, "properties": {"time": "2025-12-06T12:54:08", "popup": "Time: 2025-12-06 12:54:08", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24088999377894, 13.017508696768097]}, "properties": {"time": "2025-12-06T12:54:09", "popup": "Time: 2025-12-06 12:54:09", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24088999377894, 13.017508696768097]}, "properties": {"time": "2025-12-06T12:54:10", "popup": "Time: 2025-12-06 12:54:10", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24088999377894, 13.017508696768097]}, "properties": {"time": "2025-12-06T12:54:11", "popup": "Time: 2025-12-06 12:54:11", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24093622279541, 13.017706658307674]}, "properties": {"time": "2025-12-06T12:54:12", "popup": "Time: 2025-12-06 12:54:12", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24094188002415, 13.017730883629635]}, "properties": {"time": "2025-12-06T12:54:13", "popup": "Time: 2025-12-06 12:54:13", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24088999377894, 13.017508696768097]}, "properties": {"time": "2025-12-06T12:54:14", "popup": "Time: 2025-12-06 12:54:14", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24088999377894, 13.017508696768097]}, "properties": {"time": "2025-12-06T12:54:15", "popup": "Time: 2025-12-06 12:54:15", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24099895593287, 13.017322299721236]}, "properties": {"time": "2025-12-06T12:54:16", "popup": "Time: 2025-12-06 12:54:16", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24103049705838, 13.017473826065112]}, "properties": {"time": "2025-12-06T12:54:17", "popup": "Time: 2025-12-06 12:54:17", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24094512000349, 13.01705139519911]}, "properties": {"time": "2025-12-06T12:54:18", "popup": "Time: 2025-12-06 12:54:18", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24093452561472, 13.016997315510055]}, "properties": {"time": "2025-12-06T12:54:19", "popup": "Time: 2025-12-06 12:54:19", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24094642398957, 13.01705805147236]}, "properties": {"time": "2025-12-06T12:54:20", "popup": "Time: 2025-12-06 12:54:20", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24093773304203, 13.017013688016169]}, "properties": {"time": "2025-12-06T12:54:21", "popup": "Time: 2025-12-06 12:54:21", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24080959957976, 13.017174614337575]}, "properties": {"time": "2025-12-06T12:54:22", "popup": "Time: 2025-12-06 12:54:22", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24088999377894, 13.017508696768097]}, "properties": {"time": "2025-12-06T12:54:23", "popup": "Time: 2025-12-06 12:54:23", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24093993735583, 13.017722564757472]}, "properties": {"time": "2025-12-06T12:54:24", "popup": "Time: 2025-12-06 12:54:24", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24094127707747, 13.01772830169828]}, "properties": {"time": "2025-12-06T12:54:25", "popup": "Time: 2025-12-06 12:54:25", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24091100885643, 13.01759868740697]}, "properties": {"time": "2025-12-06T12:54:26", "popup": "Time: 2025-12-06 12:54:26", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24094188002415, 13.017730883629635]}, "properties": {"time": "2025-12-06T12:54:27", "popup": "Time: 2025-12-06 12:54:27", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24070423176693, 13.018330937656112]}, "properties": {"time": "2025-12-06T12:54:28", "popup": "Time: 2025-12-06 12:54:28", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24074993081283, 13.018313683687314]}, "properties": {"time": "2025-12-06T12:54:29", "popup": "Time: 2025-12-06 12:54:29", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24074993081283, 13.018313683687314]}, "properties": {"time": "2025-12-06T12:54:30", "popup": "Time: 2025-12-06 12:54:30", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24115683217646, 13.018458533495233]}, "properties": {"time": "2025-12-06T12:54:31", "popup": "Time: 2025-12-06 12:54:31", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24113302145042, 13.018387760860088]}, "properties": {"time": "2025-12-06T12:54:32", "popup": "Time: 2025-12-06 12:54:32", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24108771496823, 13.018253096268612]}, "properties": {"time": "2025-12-06T12:54:33", "popup": "Time: 2025-12-06 12:54:33", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24108771496823, 13.018253096268612]}, "properties": {"time": "2025-12-06T12:54:34", "popup": "Time: 2025-12-06 12:54:34", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24112398258487, 13.018360894624424]}, "properties": {"time": "2025-12-06T12:54:35", "popup": "Time: 2025-12-06 12:54:35", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24111510623477, 13.018334511428282]}, "properties": {"time": "2025-12-06T12:54:36", "popup": "Time: 2025-12-06 12:54:36", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24111228234243, 13.018326117965344]}, "properties": {"time": "2025-12-06T12:54:37", "popup": "Time: 2025-12-06 12:54:37", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24110997409015, 13.018319257140398]}, "properties": {"time": "2025-12-06T12:54:38", "popup": "Time: 2025-12-06 12:54:38", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24111899445003, 13.018346068380303]}, "properties": {"time": "2025-12-06T12:54:39", "popup": "Time: 2025-12-06 12:54:39", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24116138297497, 13.0184741014213]}, "properties": {"time": "2025-12-06T12:54:40", "popup": "Time: 2025-12-06 12:54:40", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24117062202629, 13.018505707488345]}, "properties": {"time": "2025-12-06T12:54:41", "popup": "Time: 2025-12-06 12:54:41", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24120801778214, 13.018633635346864]}, "properties": {"time": "2025-12-06T12:54:42", "popup": "Time: 2025-12-06 12:54:42", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24123250936198, 13.018717418994996]}, "properties": {"time": "2025-12-06T12:54:43", "popup": "Time: 2025-12-06 12:54:43", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24123250936198, 13.018717418994996]}, "properties": {"time": "2025-12-06T12:54:44", "popup": "Time: 2025-12-06 12:54:44", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24126982749475, 13.018848436704085]}, "properties": {"time": "2025-12-06T12:54:45", "popup": "Time: 2025-12-06 12:54:45", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24128215577461, 13.018891719199864]}, "properties": {"time": "2025-12-06T12:54:46", "popup": "Time: 2025-12-06 12:54:46", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24130044723063, 13.01895593736779]}, "properties": {"time": "2025-12-06T12:54:49", "popup": "Time: 2025-12-06 12:54:49", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24132084247165, 13.019029441554268]}, "properties": {"time": "2025-12-06T12:54:50", "popup": "Time: 2025-12-06 12:54:50", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24132347513172, 13.019038929624363]}, "properties": {"time": "2025-12-06T12:54:51", "popup": "Time: 2025-12-06 12:54:51", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.2413057819854, 13.018975163759343]}, "properties": {"time": "2025-12-06T12:54:52", "popup": "Time: 2025-12-06 12:54:52", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24134347665773, 13.019111014822512]}, "properties": {"time": "2025-12-06T12:54:53", "popup": "Time: 2025-12-06 12:54:53", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.2413333620691, 13.019074562002478]}, "properties": {"time": "2025-12-06T12:54:54", "popup": "Time: 2025-12-06 12:54:54", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.2413692788443, 13.01920324420962]}, "properties": {"time": "2025-12-06T12:54:55", "popup": "Time: 2025-12-06 12:54:55", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.2414046525965, 13.019320725148518]}, "properties": {"time": "2025-12-06T12:54:56", "popup": "Time: 2025-12-06 12:54:56", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24137639229029, 13.019226868918889]}, "properties": {"time": "2025-12-06T12:54:57", "popup": "Time: 2025-12-06 12:54:57", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24144498080481, 13.01945482947392]}, "properties": {"time": "2025-12-06T12:54:58", "popup": "Time: 2025-12-06 12:54:58", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.2415299057702, 13.019734544335872]}, "properties": {"time": "2025-12-06T12:54:59", "popup": "Time: 2025-12-06 12:54:59", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24152249409698, 13.01971110755104]}, "properties": {"time": "2025-12-06T12:55:00", "popup": "Time: 2025-12-06 12:55:00", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24153266279654, 13.019743262451632]}, "properties": {"time": "2025-12-06T12:55:01", "popup": "Time: 2025-12-06 12:55:01", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24151086453264, 13.019674333174706]}, "properties": {"time": "2025-12-06T12:55:02", "popup": "Time: 2025-12-06 12:55:02", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24155196716404, 13.019804305635438]}, "properties": {"time": "2025-12-06T12:55:03", "popup": "Time: 2025-12-06 12:55:03", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24154926176051, 13.019795750762428]}, "properties": {"time": "2025-12-06T12:55:04", "popup": "Time: 2025-12-06 12:55:04", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24156233113528, 13.01983707798983]}, "properties": {"time": "2025-12-06T12:55:05", "popup": "Time: 2025-12-06 12:55:05", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24156787262146, 13.01985460095562]}, "properties": {"time": "2025-12-06T12:55:06", "popup": "Time: 2025-12-06 12:55:06", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24160112530699, 13.019960737627574]}, "properties": {"time": "2025-12-06T12:55:07", "popup": "Time: 2025-12-06 12:55:07", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24172602473634, 13.020352839679616]}, "properties": {"time": "2025-12-06T12:55:08", "popup": "Time: 2025-12-06 12:55:08", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24172602473634, 13.020352839679616]}, "properties": {"time": "2025-12-06T12:55:09", "popup": "Time: 2025-12-06 12:55:09", "style": {"color": "blue"}, "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 8}}}]}, {
+                    pointToLayer: function (feature, latLng) {
+                        if (feature.properties.icon == 'marker') {
+                            if(feature.properties.iconstyle){
+                                return new L.Marker(latLng, {
+                                    icon: L.icon(feature.properties.iconstyle)});
+                            }
+                            //else
+                            return new L.Marker(latLng);
+                        }
+                        if (feature.properties.icon == 'circle') {
+                            if (feature.properties.iconstyle) {
+                                return new L.circleMarker(latLng, feature.properties.iconstyle)
+                                };
+                            //else
+                            return new L.circleMarker(latLng);
+                        }
+                        //else
+
+                        return new L.Marker(latLng);
+                    },
+                    style: function (feature) {
+                        return feature.properties.style;
+                    },
+                    onEachFeature: function(feature, layer) {
+                        if (feature.properties.popup) {
+                        layer.bindPopup(feature.properties.popup);
+                        }
+                        if (feature.properties.tooltip) {
+                        layer.bindTooltip(feature.properties.tooltip);
+                        }
+                    }
+                })
+
+            var timestamped_geo_json_de123741fee19be21dd6bdf9e76c8212 = L.timeDimension.layer.geoJson(
+                geoJsonLayer,
+                {
+                    updateTimeDimension: true,
+                    addlastPoint: true,
+                    duration: undefined,
+                }
+            ).addTo(map_830d46384768d05b1085dd4b2dc676a0);
+        
+</script>
+</html>

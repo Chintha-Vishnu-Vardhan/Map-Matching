@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_09d942fbf546e9fb383803fdd2c75deb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iso8601-js-period@0.2.1/iso8601.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-timedimension@1.1.1/dist/leaflet.timedimension.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-timedimension@1.1.1/dist/leaflet.timedimension.control.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_09d942fbf546e9fb383803fdd2c75deb" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_09d942fbf546e9fb383803fdd2c75deb = L.map(
+                "map_09d942fbf546e9fb383803fdd2c75deb",
+                {
+                    center: [13.016720331213195, 80.2409104076465],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 18,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_db33ed8358097d335a72cf7850380ea4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_db33ed8358097d335a72cf7850380ea4.addTo(map_09d942fbf546e9fb383803fdd2c75deb);
+        
+    
+            var marker_87bc7dc40c4ff10f45a49d5c6f335634 = L.marker(
+                [13.01825309626861, 80.24108771496823],
+                {
+}
+            ).addTo(map_09d942fbf546e9fb383803fdd2c75deb);
+        
+    
+            var icon_b763925a8e93a8b4f6955d00ddae8820 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "play",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b9c530588f2fadc43630db2e03360159 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_78e4f0e3e6c439c22aa29a4809dec452 = $(`<div id="html_78e4f0e3e6c439c22aa29a4809dec452" style="width: 100.0%; height: 100.0%;">Start | ID: 2 | E1GM</div>`)[0];
+                popup_b9c530588f2fadc43630db2e03360159.setContent(html_78e4f0e3e6c439c22aa29a4809dec452);
+            
+        
+
+        marker_87bc7dc40c4ff10f45a49d5c6f335634.bindPopup(popup_b9c530588f2fadc43630db2e03360159)
+        ;
+
+        
+    
+    
+                marker_87bc7dc40c4ff10f45a49d5c6f335634.setIcon(icon_b763925a8e93a8b4f6955d00ddae8820);
+            
+    
+            var marker_e05957e9eee68247458f4ac58e13fbc4 = L.marker(
+                [13.018207073365403, 80.24106944887855],
+                {
+}
+            ).addTo(map_09d942fbf546e9fb383803fdd2c75deb);
+        
+    
+            var icon_e45befdd20e7248f97689824e7582da8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "stop",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_969d941436ecff5e1eab590a1fbe9b33 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_605c7ab4d1a5848aebb7a7813f21faad = $(`<div id="html_605c7ab4d1a5848aebb7a7813f21faad" style="width: 100.0%; height: 100.0%;">End | ID: 26 | S2</div>`)[0];
+                popup_969d941436ecff5e1eab590a1fbe9b33.setContent(html_605c7ab4d1a5848aebb7a7813f21faad);
+            
+        
+
+        marker_e05957e9eee68247458f4ac58e13fbc4.bindPopup(popup_969d941436ecff5e1eab590a1fbe9b33)
+        ;
+
+        
+    
+    
+                marker_e05957e9eee68247458f4ac58e13fbc4.setIcon(icon_e45befdd20e7248f97689824e7582da8);
+            
+    
+            L.Control.TimeDimensionCustom = L.Control.TimeDimension.extend({
+                _getDisplayDateFormat: function(date){
+                    var newdate = new moment(date);
+                    console.log(newdate)
+                    return newdate.format("HH:mm:ss");
+                }
+            });
+            map_09d942fbf546e9fb383803fdd2c75deb.timeDimension = L.timeDimension(
+                {
+                    period: "PT1S",
+                }
+            );
+            var timeDimensionControl = new L.Control.TimeDimensionCustom(
+                {
+  "position": "bottomleft",
+  "minSpeed": 0.1,
+  "maxSpeed": 5,
+  "autoPlay": true,
+  "loopButton": true,
+  "timeSliderDragUpdate": true,
+  "speedSlider": true,
+  "playerOptions": {
+  "transitionTime": 200,
+  "loop": false,
+  "startOver": true,
+},
+}
+            );
+            map_09d942fbf546e9fb383803fdd2c75deb.addControl(this.timeDimensionControl);
+
+            var geoJsonLayer = L.geoJson({"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24108771496823, 13.01825309626861]}, "properties": {"time": "2025-01-01T10:00:00", "popup": "ID: 2<br>DES: E1GM<br>Elevation: 9.682 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24115683217646, 13.018458533495233]}, "properties": {"time": "2025-01-01T10:00:01", "popup": "ID: 3<br>DES: E1GM<br>Elevation: 9.426 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24123250936198, 13.018717418994994]}, "properties": {"time": "2025-01-01T10:00:02", "popup": "ID: 4<br>DES: E1GM<br>Elevation: 9.263 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24130044723063, 13.018955937367792]}, "properties": {"time": "2025-01-01T10:00:03", "popup": "ID: 5<br>DES: E1GM<br>Elevation: 9.283 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24136658747076, 13.019194305795585]}, "properties": {"time": "2025-01-01T10:00:04", "popup": "ID: 6<br>DES: E1GM<br>Elevation: 9.144 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24143779616566, 13.019430799257325]}, "properties": {"time": "2025-01-01T10:00:05", "popup": "ID: 7<br>DES: E1GM<br>Elevation: 9.09 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.2415061791699, 13.019659517372338]}, "properties": {"time": "2025-01-01T10:00:06", "popup": "ID: 8<br>DES: E1GM<br>Elevation: 8.941 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24157670978008, 13.01988254530059]}, "properties": {"time": "2025-01-01T10:00:07", "popup": "ID: 9<br>DES: E1GM<br>Elevation: 8.813 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.2416451314125, 13.020101669949637]}, "properties": {"time": "2025-01-01T10:00:08", "popup": "ID: 10<br>DES: E1GM<br>Elevation: 8.629 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24172602473634, 13.02035283967962]}, "properties": {"time": "2025-01-01T10:00:09", "popup": "ID: 11<br>DES: E1GM<br>Elevation: 8.577 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24179899907453, 13.020342473905135]}, "properties": {"time": "2025-01-01T10:00:10", "popup": "ID: 12<br>DES: M1<br>Elevation: 8.822 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24180651583384, 13.020339059925268]}, "properties": {"time": "2025-01-01T10:00:11", "popup": "ID: 13<br>DES: M2<br>Elevation: 8.789 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24187683314466, 13.02031089173098]}, "properties": {"time": "2025-01-01T10:00:12", "popup": "ID: 14<br>DES: E2GM<br>Elevation: 8.732 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24179564924682, 13.02006122216036]}, "properties": {"time": "2025-01-01T10:00:13", "popup": "ID: 15<br>DES: E2GM<br>Elevation: 8.678 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24173270713575, 13.019838397307682]}, "properties": {"time": "2025-01-01T10:00:14", "popup": "ID: 16<br>DES: E2GM<br>Elevation: 8.723 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24152288369446, 13.01915181346386]}, "properties": {"time": "2025-01-01T10:00:15", "popup": "ID: 17<br>DES: E2GM<br>Elevation: 8.969 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24123481997508, 13.018106503917773]}, "properties": {"time": "2025-01-01T10:00:16", "popup": "ID: 18<br>DES: S1<br>Elevation: 9.724 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24129892581156, 13.018055667498437]}, "properties": {"time": "2025-01-01T10:00:17", "popup": "ID: 19<br>DES: S1<br>Elevation: 9.74 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24145179508498, 13.017975423889997]}, "properties": {"time": "2025-01-01T10:00:18", "popup": "ID: 20<br>DES: S1<br>Elevation: 9.771 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24152318873927, 13.017941824666936]}, "properties": {"time": "2025-01-01T10:00:19", "popup": "ID: 21<br>DES: S1<br>Elevation: 9.587 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24149283329506, 13.017883641134071]}, "properties": {"time": "2025-01-01T10:00:20", "popup": "ID: 22<br>DES: S1<br>Elevation: 9.296 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24145024119268, 13.017910262783948]}, "properties": {"time": "2025-01-01T10:00:21", "popup": "ID: 23<br>DES: S1<br>Elevation: 9.287 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24138865250978, 13.017936973542083]}, "properties": {"time": "2025-01-01T10:00:22", "popup": "ID: 24<br>DES: S1<br>Elevation: 9.329 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24134462190719, 13.017954476643265]}, "properties": {"time": "2025-01-01T10:00:23", "popup": "ID: 25<br>DES: S1<br>Elevation: 9.369 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24129901691383, 13.017998441028169]}, "properties": {"time": "2025-01-01T10:00:24", "popup": "ID: 128<br>DES: M2<br>Elevation: 9.901 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24122134136167, 13.018032699960061]}, "properties": {"time": "2025-01-01T10:00:25", "popup": "ID: 127<br>DES: M2<br>Elevation: 9.894 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24103049705838, 13.017473826065112]}, "properties": {"time": "2025-01-01T10:00:26", "popup": "ID: 108<br>DES: E4<br>Elevation: 9.477 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24098596287794, 13.017259879893977]}, "properties": {"time": "2025-01-01T10:00:27", "popup": "ID: 107<br>DES: E4<br>Elevation: 9.468 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.2408906731297, 13.016773467667711]}, "properties": {"time": "2025-01-01T10:00:28", "popup": "ID: 104<br>DES: E4<br>Elevation: 9.352 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.2407118530142, 13.015906306029834]}, "properties": {"time": "2025-01-01T10:00:29", "popup": "ID: 99<br>DES: E4<br>Elevation: 9.492 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24067775869167, 13.015676973774623]}, "properties": {"time": "2025-01-01T10:00:30", "popup": "ID: 98<br>DES: E4<br>Elevation: 9.705 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24061681488271, 13.015261813373389]}, "properties": {"time": "2025-01-01T10:00:31", "popup": "ID: 89<br>DES: E4<br>Elevation: 9.858 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24059327013312, 13.01504151780265]}, "properties": {"time": "2025-01-01T10:00:32", "popup": "ID: 88<br>DES: E4<br>Elevation: 9.925 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24053642368538, 13.01459210927799]}, "properties": {"time": "2025-01-01T10:00:33", "popup": "ID: 86<br>DES: E4<br>Elevation: 10.195 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24052259286535, 13.014461457274848]}, "properties": {"time": "2025-01-01T10:00:34", "popup": "ID: 87<br>DES: E4<br>Elevation: 10.045 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.2404970394095, 13.014055930680374]}, "properties": {"time": "2025-01-01T10:00:35", "popup": "ID: 82<br>DES: E4<br>Elevation: 10.182 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24049502040998, 13.012928985545894]}, "properties": {"time": "2025-01-01T10:00:36", "popup": "ID: 77<br>DES: E4<br>Elevation: 9.866 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24050143585193, 13.012490603473049]}, "properties": {"time": "2025-01-01T10:00:37", "popup": "ID: 74<br>DES: E4<br>Elevation: 9.749 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24050437103739, 13.01225945360179]}, "properties": {"time": "2025-01-01T10:00:38", "popup": "ID: 73<br>DES: E3<br>Elevation: 9.647 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.2404221238069, 13.01225119262403]}, "properties": {"time": "2025-01-01T10:00:39", "popup": "ID: 72<br>DES: E3<br>Elevation: 10.07 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24041633770369, 13.012249593339302]}, "properties": {"time": "2025-01-01T10:00:40", "popup": "ID: 71<br>DES: E3<br>Elevation: 10.053 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24034018038287, 13.012255211531304]}, "properties": {"time": "2025-01-01T10:00:41", "popup": "ID: 70<br>DES: E3<br>Elevation: 9.808 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24033832511212, 13.012485975748733]}, "properties": {"time": "2025-01-01T10:00:42", "popup": "ID: 69<br>DES: E3<br>Elevation: 9.845 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24033595234046, 13.012708012927591]}, "properties": {"time": "2025-01-01T10:00:43", "popup": "ID: 68<br>DES: E3<br>Elevation: 9.947 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24033325287655, 13.012925284017948]}, "properties": {"time": "2025-01-01T10:00:44", "popup": "ID: 67<br>DES: E3<br>Elevation: 10.029 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24033084896463, 13.01315450947875]}, "properties": {"time": "2025-01-01T10:00:45", "popup": "ID: 66<br>DES: E3<br>Elevation: 10.153 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24032912166102, 13.013376539493388]}, "properties": {"time": "2025-01-01T10:00:46", "popup": "ID: 65<br>DES: E3<br>Elevation: 10.347 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24032652250365, 13.013603250701518]}, "properties": {"time": "2025-01-01T10:00:47", "popup": "ID: 64<br>DES: E3<br>Elevation: 10.305 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24032642461141, 13.01382315156961]}, "properties": {"time": "2025-01-01T10:00:48", "popup": "ID: 63<br>DES: E3<br>Elevation: 10.281 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24033209054375, 13.01405803379979]}, "properties": {"time": "2025-01-01T10:00:49", "popup": "ID: 62<br>DES: E3<br>Elevation: 10.353 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24034514595861, 13.014276734419111]}, "properties": {"time": "2025-01-01T10:00:50", "popup": "ID: 61<br>DES: E3<br>Elevation: 10.374 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24036671469412, 13.01447358739213]}, "properties": {"time": "2025-01-01T10:00:51", "popup": "ID: 60<br>DES: E3<br>Elevation: 10.31 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24038222216431, 13.014607779725269]}, "properties": {"time": "2025-01-01T10:00:52", "popup": "ID: 59<br>DES: E3<br>Elevation: 10.309 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24040740661313, 13.014828568378398]}, "properties": {"time": "2025-01-01T10:00:53", "popup": "ID: 58<br>DES: E3<br>Elevation: 10.341 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24043675207527, 13.01506077115598]}, "properties": {"time": "2025-01-01T10:00:54", "popup": "ID: 57<br>DES: E3<br>Elevation: 10.118 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24046433262694, 13.01527903505945]}, "properties": {"time": "2025-01-01T10:00:55", "popup": "ID: 56<br>DES: E3<br>Elevation: 9.902 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24049089782514, 13.0154946105162]}, "properties": {"time": "2025-01-01T10:00:56", "popup": "ID: 55<br>DES: E3<br>Elevation: 9.931 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24051803577872, 13.015697745871345]}, "properties": {"time": "2025-01-01T10:00:57", "popup": "ID: 54<br>DES: E3<br>Elevation: 9.845 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24055465638023, 13.015936245068032]}, "properties": {"time": "2025-01-01T10:00:58", "popup": "ID: 53<br>DES: E3<br>Elevation: 9.678 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24069423997996, 13.016615164362637]}, "properties": {"time": "2025-01-01T10:00:59", "popup": "ID: 52<br>DES: E3<br>Elevation: 9.624 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24074213990302, 13.016829030006324]}, "properties": {"time": "2025-01-01T10:01:00", "popup": "ID: 51<br>DES: E3<br>Elevation: 9.421 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24078026864233, 13.01705386210064]}, "properties": {"time": "2025-01-01T10:01:01", "popup": "ID: 50<br>DES: E3<br>Elevation: 9.512 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24083749919717, 13.017289473888606]}, "properties": {"time": "2025-01-01T10:01:02", "popup": "ID: 49<br>DES: E3<br>Elevation: 9.412 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24088999377894, 13.017508696768097]}, "properties": {"time": "2025-01-01T10:01:03", "popup": "ID: 48<br>DES: E3<br>Elevation: 9.529 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24094188002415, 13.017730883629637]}, "properties": {"time": "2025-01-01T10:01:04", "popup": "ID: 47<br>DES: E3<br>Elevation: 9.677 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24099665381219, 13.017952699167642]}, "properties": {"time": "2025-01-01T10:01:05", "popup": "ID: 46<br>DES: E3<br>Elevation: 9.812 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24101513080471, 13.018165755310497]}, "properties": {"time": "2025-01-01T10:01:06", "popup": "ID: 38<br>DES: S2-M2<br>Elevation: 9.751 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24095895020399, 13.018187996959384]}, "properties": {"time": "2025-01-01T10:01:07", "popup": "ID: 40<br>DES: S2-M2<br>Elevation: 9.862 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.2408383666798, 13.018246543568845]}, "properties": {"time": "2025-01-01T10:01:08", "popup": "ID: 34<br>DES: S2<br>Elevation: 9.899 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24078403198511, 13.01828945151848]}, "properties": {"time": "2025-01-01T10:01:09", "popup": "ID: 33<br>DES: S2<br>Elevation: 9.985 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24074993081283, 13.018313683687314]}, "properties": {"time": "2025-01-01T10:01:10", "popup": "ID: 32<br>DES: S2<br>Elevation: 10.228 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24070423176693, 13.018330937656115]}, "properties": {"time": "2025-01-01T10:01:11", "popup": "ID: 31<br>DES: S2<br>Elevation: 10.053 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24072586800142, 13.01836038744469]}, "properties": {"time": "2025-01-01T10:01:12", "popup": "ID: 30<br>DES: S2<br>Elevation: 10.075 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24081738922175, 13.018318754766906]}, "properties": {"time": "2025-01-01T10:01:13", "popup": "ID: 29<br>DES: S2<br>Elevation: 9.854 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24088548940264, 13.0182826414602]}, "properties": {"time": "2025-01-01T10:01:14", "popup": "ID: 28<br>DES: S2<br>Elevation: 9.829 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24103386061932, 13.018207873435664]}, "properties": {"time": "2025-01-01T10:01:15", "popup": "ID: 27<br>DES: S2<br>Elevation: 9.746 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [80.24106944887855, 13.018207073365403]}, "properties": {"time": "2025-01-01T10:01:16", "popup": "ID: 26<br>DES: S2<br>Elevation: 9.689 m", "icon": "circle", "iconstyle": {"fillColor": "orange", "fillOpacity": 1, "stroke": "true", "radius": 7}}}]}, {
+                    pointToLayer: function (feature, latLng) {
+                        if (feature.properties.icon == 'marker') {
+                            if(feature.properties.iconstyle){
+                                return new L.Marker(latLng, {
+                                    icon: L.icon(feature.properties.iconstyle)});
+                            }
+                            //else
+                            return new L.Marker(latLng);
+                        }
+                        if (feature.properties.icon == 'circle') {
+                            if (feature.properties.iconstyle) {
+                                return new L.circleMarker(latLng, feature.properties.iconstyle)
+                                };
+                            //else
+                            return new L.circleMarker(latLng);
+                        }
+                        //else
+
+                        return new L.Marker(latLng);
+                    },
+                    style: function (feature) {
+                        return feature.properties.style;
+                    },
+                    onEachFeature: function(feature, layer) {
+                        if (feature.properties.popup) {
+                        layer.bindPopup(feature.properties.popup);
+                        }
+                        if (feature.properties.tooltip) {
+                        layer.bindTooltip(feature.properties.tooltip);
+                        }
+                    }
+                })
+
+            var timestamped_geo_json_18be62ecf24cdf13732f41b1536664ab = L.timeDimension.layer.geoJson(
+                geoJsonLayer,
+                {
+                    updateTimeDimension: true,
+                    addlastPoint: true,
+                    duration: undefined,
+                }
+            ).addTo(map_09d942fbf546e9fb383803fdd2c75deb);
+        
+</script>
+</html>
